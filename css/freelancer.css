@@ -6,6 +6,7 @@
 
 body {
     overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
 }
 
 p {
@@ -23,16 +24,20 @@ a:active,
 a.active {
     outline: 0;
     color: #18bc9c;
+    font-family: 'Quicksand', sans-serif;
 }
 
-h1,
-h2,
+h1, h2 {
+    font-family: 'Galada', cursive;
+}
+
+
 h3,
 h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Quicksand","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -98,7 +103,7 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Galada', cursive;
     font-size: 2em;
     font-weight: 700;
 }
@@ -153,6 +158,8 @@ header .intro-text .skills {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     border-radius: 0;
+    margin-bottom: 0;
+    min-height: 90px;
 }
 
 .navbar a:focus {
@@ -166,6 +173,13 @@ header .intro-text .skills {
 
 .navbar .navbar-nav li a:focus {
     outline: 0;
+
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus {
+    background: rgba(151,222,231,.7);
 }
 
 .navbar .navbar-nav li a:hover {
@@ -175,7 +189,7 @@ header .intro-text .skills {
 .navbar-default,
 .navbar-inverse {
     border: 0;
-    background: #363838;
+    background: #5b599a;
     color: black;
 }
 
@@ -225,6 +239,11 @@ section.success a.active {
     font-size: 50px;
     margin-right: 20px;
     color: #97dee7;
+    margin-left: 15px;
+}
+
+.list-inline {
+    margin-left: 10px;
 }
 
 #portfolio .portfolio-item {
@@ -236,7 +255,7 @@ section.success a.active {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 240px;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
@@ -306,7 +325,7 @@ section.success a.active {
     position: relative;
     margin-bottom: 0;
     padding-bottom: .5em;
-    border-bottom: 1px solid #eee;
+    border: 1px solid #97dee7;
 }
 
 .floating-label-form-group input,
@@ -355,7 +374,7 @@ section.success a.active {
 }
 
 form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #97dee7;
 }
 
 footer {
