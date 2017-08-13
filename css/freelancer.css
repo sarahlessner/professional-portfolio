@@ -302,6 +302,10 @@ section.success a.active {
     }
 }
 
+.btn-default {
+    background: black;
+}
+
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
@@ -442,6 +446,7 @@ footer .footer-below {
 }
 
 .portfolio-modal .modal-content {
+    color: black;
     padding: 100px 0;
     min-height: 100%;
     border: 0;
