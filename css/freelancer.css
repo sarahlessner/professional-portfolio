@@ -102,7 +102,6 @@ header img {
 
 header .intro-text .name {
     display: block;
-    text-transform: uppercase;
     font-family: 'Galada', cursive;
     font-size: 2em;
     font-weight: 700;
