@@ -254,7 +254,7 @@ section.success a.active {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 240px;
+    max-width: 260px;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
@@ -262,7 +262,7 @@ section.success a.active {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(151,222,231,.5);
+    background: rgba(151,222,231,.8);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -280,11 +280,15 @@ section.success a.active {
     margin-top: -12px;
     text-align: center;
     font-size: 20px;
-    color: #fff;
+    color: black;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
     margin-top: -12px;
+}
+
+.portfolio-item img {
+    padding: 10px;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
@@ -422,6 +426,8 @@ footer .footer-below {
 .submitbtn {
     background: #5b599a;
     color: white;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .scroll-top {
