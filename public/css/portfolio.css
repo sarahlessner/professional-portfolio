@@ -23,7 +23,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: white;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -172,7 +172,7 @@ header .intro-text .skills {
 
 .navbar .navbar-nav li a:focus {
     outline: 0;
-
+    color: #97dee7;
 }
 
 .navbar-default .navbar-nav>.active>a, 
@@ -324,7 +324,7 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #97dee7;
     background: #fff;
 }
 
@@ -377,7 +377,7 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #97dee7;
 }
 
 form .row:first-child .floating-label-form-group {
