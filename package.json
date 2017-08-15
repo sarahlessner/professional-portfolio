@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/sarahlessner/professional-portfolio#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.4",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "php-express": "0.0.3"
   }
 }
