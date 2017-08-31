@@ -13,13 +13,12 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 
-
-
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'views')));
 
+var emailpw = require(path.join(__dirname, "emailpw.js"));
 
-var emailpw = require("./emailpw.js");
+// var emailpw = require("./emailpw.js");
 
 
 var transporter = nodemailer.createTransport({
