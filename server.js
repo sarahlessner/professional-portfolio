@@ -1,5 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
+var nodemailer = require("nodemailer");
 var path = require("path");
 
 var app = express()
@@ -18,34 +19,44 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'views')));
 
 
-app.use( function(req, res) {
+var emailpw = require("./emailpw.js");
+
+
+var transporter = nodemailer.createTransport({
+		service: "gmail",
+		host: "smtp.gmail.com",
+		auth: {
+				user: emailpw.emailKeys.user,
+				pass: emailpw.emailKeys.pass
+		}
+});
+//html page routing
+app.get('/', function(req, res) {
 	  res.sendFile(path.join(__dirname + '/index.html'));
 	});
-
-
-// must specify options hash even if no options provided!
-var phpExpress = require('php-express')({
- 
-  // assumes php is in your PATH
-  binPath: 'php'
-});
- 
-// set view engine to php-express
-app.set('views', './views');
-app.engine('php', phpExpress.engine);
-app.set('view engine', 'php');
- 
-// routing all .php file to php-express
-app.all(/.+\.php$/, phpExpress.router);
- 
-var server = app.listen(PORT, function () {
-  var host = server.address().address;
-  var port = server.address().port;
-  console.log('App listening at http://%s:%s', host, port);
+//mailer routing
+app.get('/sendemail', function(req, res){
+	// console.log(req);
+	var mailOptions={
+	 from: req.query.from,
+   to : req.query.to,
+   subject : req.query.subject,
+   text : req.query.text
+}
+	// console.log(mailOptions);
+	transporter.sendMail(mailOptions, function(error, response){
+		if(error){
+			console.log(error);
+			res.end("error");
+		} else {
+		// console.log("Message sent: " + response.message);
+		res.end("sent");
+		}
+	});
 });
 
 
 
-// app.listen(PORT, function() {
-//   console.log("App listening on PORT " + PORT);
-// });
+app.listen(PORT, function() {
+  console.log("App listening on PORT " + PORT);
+});

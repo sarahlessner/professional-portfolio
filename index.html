@@ -46,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-           
+
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -84,7 +84,7 @@
                         <hr class="cogs-light">
                         <span class="skills">Full Stack Web Developer</span>
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
     </header>
@@ -165,6 +165,39 @@
                         <img src="img/006-person.png" class="img-responsive" alt="">
                     </a>
                 </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <p>Friend Finder</p>
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/002-people.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <p>Crystal Collector</p>
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/001-nature.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <p>Hangman</p>
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/006-person.png" class="img-responsive" alt="">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -189,7 +222,7 @@
                 <div class="col-lg-3">
                     <h3>Skills</h3>
                     <ul>
-                        <li>HTML5</li> 
+                        <li>HTML5</li>
                         <li>CSS3</li>
                         <li>Javascript</li>
                         <li>JQuery</li>
@@ -234,7 +267,7 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="email_body" required data-validation-required-message="Please enter a message."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -242,7 +275,8 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn submitbtn">Send</button>
+                                <button type="button" id="send_email" class="btn submitbtn">Send</button>
+                                <span id="message"></span>
                             </div>
                         </div>
                     </form>
@@ -250,6 +284,8 @@
             </div>
         </div>
     </section>
+
+
 
     <!-- Footer -->
     <footer class="text-center" id="connect">
@@ -419,9 +455,79 @@
             </div>
         </div>
     </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Hangman Game</h2>
+                            <hr>
+                            <p>Classic game wherein users receive a word to try to guess. The number of characters in the word are revealed and letters are filled in as the user makes correct guesses. Too many incorrect guesses will "hang" the "man"</p>
+                            <a href="https://sarahlessner.github.io/Hangman-Game/" target="_blank"><img src="img/006-person.png" class="img-responsive img-centered" alt="crystal"></a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Hangman Game</h2>
+                            <hr>
+                            <p>Classic game wherein users receive a word to try to guess. The number of characters in the word are revealed and letters are filled in as the user makes correct guesses. Too many incorrect guesses will "hang" the "man"</p>
+                            <a href="https://sarahlessner.github.io/Hangman-Game/" target="_blank"><img src="img/006-person.png" class="img-responsive img-centered" alt="crystal"></a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Hangman Game</h2>
+                            <hr>
+                            <p>Classic game wherein users receive a word to try to guess. The number of characters in the word are revealed and letters are filled in as the user makes correct guesses. Too many incorrect guesses will "hang" the "man"</p>
+                            <a href="https://sarahlessner.github.io/Hangman-Game/" target="_blank"><img src="img/006-person.png" class="img-responsive img-centered" alt="crystal"></a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -433,10 +539,34 @@
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
+    <!-- bit of logic to handle email sending -->
+    <script type="text/javascript">
+
+          var currentURL = window.location.origin;
+
+          $("#send_email").on("click", function(){
+              var from= $("#email").val().trim();
+              var to= "sarahlessner@gmail.com";
+              var subject= $("#name").val()+" sent you a message from your portfolio website!";
+              var text= $("#email_body").val()+" reply to: "+$("#email").val();
+
+              $.get(currentURL+'/sendemail',{from:from,to:to,subject:subject,text:text},function(data){
+              if(data=="sent")
+              {
+                  console.log("data sent!");
+                  $("#message").empty().html("Email has been sent to Sarah Lessner");
+                  $("#email").val("");
+                  $("#name").val("");
+                  $("#email_body").val("");
+              }
+            });
+          });
+
+    </script>
 
 </body>
 
