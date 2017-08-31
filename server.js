@@ -25,8 +25,8 @@ var transporter = nodemailer.createTransport({
 		service: "gmail",
 		host: "smtp.gmail.com",
 		auth: {
-				user: emailpw.user,
-				pass: emailpw.pass
+				user: process.env.GMAIL_USERNAME || emailpw.user,
+				pass: process.env.GMAIL_PW || emailpw.pass
 		}
 });
 //html page routing
