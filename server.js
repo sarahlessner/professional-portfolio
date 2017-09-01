@@ -16,17 +16,11 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'views')));
 
-// var emailpw = require(path.join(__dirname + '/emailpw.js'));
-
-// var emailpw = require("./emailpw.js");
-
 
 var transporter = nodemailer.createTransport({
 		service: "gmail",
 		host: "smtp.gmail.com",
 		auth: {
-				// user: process.env.GMAIL_USERNAME || emailpw.user,
-				// pass: process.env.GMAIL_PW || emailpw.pass
 				user: process.env.GMAIL_USERNAME,
 				pass: process.env.GMAIL_PW
 		}
