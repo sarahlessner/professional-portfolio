@@ -64,14 +64,15 @@ hr.cogs-primary:after {
     padding: 0 .25em;
     font-family: FontAwesome;
     font-size: 2em;
+    color: #6ed0dc;
 }
 
 hr.cogs-light {
-    border-color: #6ed0dc;
+    border-color: #8895b3;
 }
 
 hr.cogs-light:after {
-    color: #6ed0dc;
+
     background-color: #f6f6ff;
 }
 
@@ -80,7 +81,7 @@ hr.cogs-primary {
 }
 
 hr.cogs-primary:after {
-    color: #8895b3;
+
     background-color: #fff;
 }
 
@@ -109,11 +110,13 @@ header .intro-text .name {
     font-family: 'Galada', cursive;
     font-size: 2em;
     font-weight: 700;
+    color: #6ed0dc;
 }
 
 header .intro-text .skills {
-    font-size: 1.25em;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: bold;
+
 }
 
 @media(min-width:768px) {
@@ -215,7 +218,7 @@ section h2 {
 }
 
 section.success {
-    color: #6ed0dc;
+    color: #8895b3;
     background: #f6f6ff;
 }
 
@@ -245,8 +248,12 @@ section.success ul {
 .list-inline .fa {
     font-size: 50px;
     margin-right: 20px;
-    color: #c3b9fc;
+    color: rgba(151,222,231,.7);
     margin-left: 15px;
+}
+
+.list-inline .fa:hover {
+  color: #c3b9fc;
 }
 
 .list-inline {
@@ -346,6 +353,7 @@ section.success ul {
 
 .floating-label-form-group:last-child {
   border-bottom: 1px solid black;
+
 }
 
 .floating-label-form-group input,
@@ -355,7 +363,7 @@ section.success ul {
     padding-right: 0;
     padding-left: 0;
     border: 0;
-    border-radius: 0;
+    /*border-radius: 0;*/
     font-size: 1.5em;
     background: 0 0;
     box-shadow: none!important;
@@ -381,7 +389,9 @@ section.success ul {
 
 .floating-label-form-group::not(:first-child) {
     padding-left: 14px;
-    border-left: 1px solid #eee;
+    border-left: 1px solid black;
+
+
 }
 
 .floating-label-form-group-with-value label {
@@ -395,6 +405,15 @@ section.success ul {
 
 form .row:first-child .floating-label-form-group {
     border-top: 1px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+
+}
+
+#emailmsg {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 footer {
@@ -438,9 +457,11 @@ footer .footer-below {
 
 .submitbtn {
     background: #6ed0dc;
-    color: white;
+    color: black;
     padding-left: 60px;
     padding-right: 60px;
+    border: 0.25px solid black;
+    font-size: 25px
 }
 
 .scroll-top {
