@@ -407,8 +407,6 @@ form .row:first-child .floating-label-form-group {
     border-top: 1px solid black;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-
-
 }
 
 #emailmsg {
@@ -462,6 +460,10 @@ footer .footer-below {
     padding-right: 60px;
     border: 0.25px solid black;
     font-size: 25px
+}
+
+.submitbtn:hover {
+  background: rgba(195,185,252,0.7);
 }
 
 .scroll-top {
